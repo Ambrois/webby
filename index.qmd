@@ -10,8 +10,6 @@ about:
     - icon: github
       text: Github
       href: https://github.com/Ambrois
-resources:
-  - files/mickey-mouse-resume.pdf
 ---
 
 Welcome to my website :P
