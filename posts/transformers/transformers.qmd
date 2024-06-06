@@ -1,7 +1,8 @@
 ---
-title: "Transformers"
+title: "Transformer Notes (Draft)"
+image: "transformers.webp"
 ---
-# Mathematical Framework for Transformers Notes
+# Notes on "A Mathematical Framework for Transformers"
 
 [Transformer Circuits Thread (transformer-circuits.pub)](https://transformer-circuits.pub/)
 
