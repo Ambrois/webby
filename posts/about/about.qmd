@@ -12,7 +12,4 @@ title-block-banner: true
 
 ## About this blog
 
-![](blurryPfp.jfif)
-
-This is the contents of the about page for my blog.
-
+Close this page right now.
