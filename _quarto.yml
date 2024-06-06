@@ -6,7 +6,7 @@ website:
   title: "My Website"
   navbar:
     left:
-      - href: projects.html
+      - href: projects.qmd
         text: Projects
       - icon: linkedin
         href: https://www.linkedin.com/in/matthew-huang-67b835231/
