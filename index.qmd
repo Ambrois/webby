@@ -10,7 +10,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/Ambrois
-output-dir: docs 
+
 ---
 
 Welcome to my website :P
