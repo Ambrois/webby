@@ -6,14 +6,14 @@ website:
   title: "My Website"
   navbar:
     left:
-      - href: projects.qmd
+      - href: Projects.html
         text: Projects
+      - href: https://ambrois.github.io/webby/
+        text: Recursion
       - icon: linkedin
         href: https://www.linkedin.com/in/matthew-huang-67b835231/
       - icon: github
         href: https://github.com/Ambrois
-      - href: https://ambrois.github.io/webby/
-        text: Recursion
 format:
   html:
     theme: flatly

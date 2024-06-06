@@ -15,5 +15,5 @@ output-dir: docs
 
 Welcome to my website :P
 
-Click here to download a virus: TODO add link
+Click here to download a virus: TODO add virus
 
