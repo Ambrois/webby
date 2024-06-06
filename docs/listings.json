@@ -2,7 +2,13 @@
   {
     "listing": "/Projects.html",
     "items": [
-      "/posts/about/about.html"
+      "/posts/transformers.html"
+    ]
+  },
+  {
+    "listing": "/Blog.html",
+    "items": [
+      "/posts/transformers.html"
     ]
   }
 ]

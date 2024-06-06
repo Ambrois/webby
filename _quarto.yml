@@ -6,8 +6,8 @@ website:
   title: "My Website"
   navbar:
     left:
-      - href: Projects.qmd
-        text: Projects
+      - href: Blog.qmd
+        text: Blog
       - href: https://ambrois.github.io/webby/
         text: Recursion
       - href: about.qmd
