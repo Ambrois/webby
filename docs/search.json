@@ -81,7 +81,7 @@
     "href": "Blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Narrative Visualization\n\n\n\n\n\n\n\n\n\n\n\nMatthew Huang\n\n\n\n\n\n\n\n\n\n\n\n\nTransformer Notes (Draft)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Narrative Visualization (Scratch)\n\n\n\n\n\n\n\n\n\n\n\nMatthew Huang\n\n\n\n\n\n\n\n\n\n\n\n\nTransformer Notes (Draft)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/transformers/transformers.html",
@@ -121,7 +121,7 @@
   {
     "objectID": "posts/Stat365/Matthew-Visualization.html",
     "href": "posts/Stat365/Matthew-Visualization.html",
-    "title": "Narrative Visualization",
+    "title": "Narrative Visualization (Scratch)",
     "section": "",
     "text": "counts_male &lt;- age_gaps |&gt; \n  filter(character_1_gender == \"man\") |&gt; \n  count(age_difference)\ncounts_female &lt;- age_gaps |&gt; \n  filter(character_1_gender == \"woman\") |&gt; \n  count(age_difference)\n\nggplot() +\n  geom_col(data = counts_male, aes(x = age_difference, y = n), fill = \"steelblue\", width=1) +\n  geom_col(data = counts_female, aes(x = age_difference, y = -n), fill = \"pink\", width=1) +\n  geom_label(aes(x=30, y=40, label=\"Male\"), color=\"steelblue\")+\n  geom_label(aes(x=30, y=-20, label=\"Female\"), color=\"pink\")+\n  labs(title = \"Age Differences in Movie Couples\",\n       subtitle = \"By Gender of the Older Actor\",\n       x='', y='',\n       caption = \"Data sourced from hollywoodagegap.com.\") +\n  theme_minimal()\n\n\n\n\nFigure 1.2 shows the age differences in holywood movie couples. It’s clear that male older relationships are significantly more common than female older relationships, as well as having larger average age gaps.\n\n\n\n\n\nage_gaps &lt;- age_gaps |&gt;\n  mutate(maleFemDiff = case_when(\n    character_1_gender == \"woman\" ~ -1 * age_difference,\n    character_1_gender == \"man\" ~ age_difference\n  ))\n\nggplot() +\n  geom_histogram(data = age_gaps %&gt;% filter(maleFemDiff &gt;= 0), aes(x = maleFemDiff), fill = \"steelblue\", binwidth = 1) +\n  geom_histogram(data = age_gaps %&gt;% filter(maleFemDiff &lt; 0), aes(x = maleFemDiff), fill = \"pink\", binwidth = 1) +\n  geom_label(aes(x =20, y = 35, label = \"Male\"), color = \"steelblue\") +\n  geom_label(aes(x = -20, y = 35, label = \"Female\"), color = \"pink\")+\n    labs(\n    title = \"Age Differences in Heterosexual Movie Couples\",\n    subtitle = \"By age of Male character - Female character\",\n    y=\"Count\",\n    x=\"Male age - Female age\")+\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n# normality check:\nqqnorm(age_gaps$maleFemDiff)\nqqline(age_gaps$maleFemDiff)\n\n\n\n\n\n\n\n# t.test\nt.test(age_gaps$maleFemDiff, mu=0, alternative=\"greater\")\n\n\n    One Sample t-test\n\ndata:  age_gaps$maleFemDiff\nt = 27.434, df = 1154, p-value &lt; 2.2e-16\nalternative hypothesis: true mean is greater than 0\n95 percent confidence interval:\n 7.946419      Inf\nsample estimates:\nmean of x \n  8.45368"
   }

@@ -1,5 +1,5 @@
 ---
-title: "Narrative Visualization"
+title: "Narrative Visualization (Scratch)"
 author: "Matthew Huang"
 format: html
 editor: visual
