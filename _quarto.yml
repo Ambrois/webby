@@ -11,7 +11,7 @@ website:
       - href: https://ambrois.github.io/webby/
         text: Recursion
       - href: about.qmd
-        text: about
+        text: About
       - icon: linkedin
         href: https://www.linkedin.com/in/matthew-huang-67b835231/
       - icon: github
